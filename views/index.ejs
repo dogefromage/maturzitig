@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maturzitig 4A</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+</head> 
 <body>
-    <!-- background -->
-    <div class="background">
-        <img class="background-image" src=<%= background %> alt="bg image not found">
-    </div>
-
-    <!-- text -->
-    <div class="dialogue">
-        <p><%= text %></p>
-    </div>
+    <h1>scenes</h1>
+    
+    <%
+        for (let i = 0; i < links.length; i++)
+        {
+            %><a <%= "href=" + links[i]; %>><%=i%></a><br><%
+        }
+    %>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="game.js"></script>
 </body>
 </html>

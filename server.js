@@ -5,22 +5,29 @@ const path = require('path');
 const fs = require('fs');
 const hash = require('./hash');
 
+// enable EJS
 app.set('view engine', 'ejs');
 
 // static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) =>
-{
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
+// scenes
 const scenesPath = path.join(__dirname, 'scenes.json');
 const scenes = JSON.parse(fs.readFileSync(scenesPath, 'utf8'));
-for (const i in scenes)
+
+// main page
+app.get('/', (req, res) =>
 {
-    console.log(`${i}: ${scenes[i].file} - ${hash(i)}`);
-}
+    let links = [];
+    for (let i = 0; i < scenes.length; i++)
+    {    
+        const h = hash(i);
+        links.push("http://localhost:5000/" + h);
+        // console.log(h, i);
+    }    
+        
+    res.render('index', { links });
+});
 
 app.get('/:scene', (req, res) => 
 {
@@ -51,6 +58,9 @@ app.get('/:scene', (req, res) =>
             
         if (json)
         {
+            // res.sendFile(path.join(__dirname, 'images', 'background.jpg'));
+            // app.use(express.static(path.join(__dirname, 'scenes', 'scene1')));
+
             res.render('game', json);
         }
         else

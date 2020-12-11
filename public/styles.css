@@ -1,2 +1,52 @@
 
+*
+{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: "ff-tisa-web-pro",serif;
+    font-size: 15px;
+    font-style: normal; */
 
+    font-family: "brandon-grotesque",sans-serif;
+}
+
+.background
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.background-image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dialogue
+{
+    background: white;
+    border-radius: 10px;
+    
+    padding: 20px;
+    
+    position: absolute;
+    bottom: 20px;
+    
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    left: 0px;
+
+    /* margin: 20px;
+    left: 0;
+    right: 0;
+    max-width: 800px; */
+}
+
+.dialogue p
+{
+    font-size: 18px;
+}
