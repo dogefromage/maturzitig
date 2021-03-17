@@ -1,19 +1,22 @@
 
 class Level
 {
-    constructor()
+    constructor(text)
     {
-        this.arrow = new Sprite("images/comic_arrows.png", 800, 200, 4);
-        this.background = new Sprite("image2.jpg", 1200, 800, 1);
+        this.text = text;
+        this.backgroundimage = "image2.jpg";
+        this.character = "images/damer.jpg";
     }
 
-    draw(ctx, width, height)
+    draw()
     {
-        this.background.drawCover(ctx, width, height, false);
-        
-        this.arrow.draw(ctx, 0, width / 7, height / 4, 60, .6, true);
-        
-        ctx.font = '50px serif';
-        ctx.fillText(this.text, 50, 90);
+        document.getElementById('background').innerHTML =
+            '<img src=' + this.backgroundimage + '>';
+            
+        document.getElementById('dialogue').innerHTML =
+            '<p>' + this.text + '</p>';
+
+        document.getElementById('character').innerHTML =
+            '<img src=' + this.character + '>';
     }
 }
