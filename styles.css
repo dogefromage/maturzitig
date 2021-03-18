@@ -188,7 +188,7 @@ body
 #arrow-bottom-left
 {
     position: absolute;
-    left: 6%;
+    left: 0;
     bottom: 0;
 
     transform: rotate(135deg) scale(0.4); /* Equal to rotateZ(45deg) */
@@ -197,7 +197,7 @@ body
 #arrow-bottom-right
 {
     position: absolute;
-    right: 6%;
+    right: 0;
     bottom: 0;
 
     transform: rotate(225deg) scale(-0.4, 0.4); /* Equal to rotateZ(45deg) */

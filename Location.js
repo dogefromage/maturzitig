@@ -28,7 +28,37 @@ class Character
  */
 class Interaction
 {
+    constructor({ dialog, character })
+    {
+        this.dialog = dialog;
+        this.character = character;
+    }
 
+    display(dialogIndex)
+    {
+        const dialogElement = document.getElementById('dialogue');
+        const characterElement = document.getElementById('character');
+
+        dialogElement.innerHTML = 
+            '<p><b>' + this.character.name + '</b><br>' + 
+            this.dialog[dialogIndex].text + '</p>';
+        
+        characterElement.innerHTML =
+            '<img src=' + this.character.image + ' class="unselectable">';
+    }
+}
+
+// arrow IDs
+const ARROWS = 
+{
+    TOP_LEFT:      'arrow-top-left',
+    TOP_CENTER:    'arrow-top-center',
+    TOP_RIGHT:     'arrow-top-right',
+    CENTER_LEFT:   'arrow-center-left',
+    CENTER_RIGHT:  'arrow-center-right',
+    BOTTOM_LEFT:   'arrow-bottom-left',
+    BOTTOM_CENTER: 'arrow-bottom-center',
+    BOTTOM_RIGHT:  'arrow-bottom-right',
 }
 
 /**
@@ -36,50 +66,72 @@ class Interaction
  */
 class Location
 {
-    constructor(dialogue, character, backgroundimage, arrows)    
+    constructor({ interactions, background, arrows })    
     {
-        this.dialogue = dialogue;
-        this.character = character;
-        this.backgroundimage = "image2.jpg";
-
-        this.dialogueIndex = 0;
-        this.inDialog = false;
+        this.interactions = interactions;
+        this.background = background;
         this.arrows = arrows;
     }
 
-    draw()
+    display(currentInteractionIndex, currentDialogIndex)
     {
         const backgroundElement = document.getElementById('background');
-        backgroundElement.innerHTML = '<img src=' + this.backgroundimage + ' class="unselectable">';
+        backgroundElement.innerHTML = '<img src=' + this.background + ' class="unselectable">';
         
         const dialogElement = document.getElementById('dialogue');
         const characterElement = document.getElementById('character');  
         const arrowContainer = document.getElementById('arrow-container');
         
-        if (this.inDialog)
+        if (currentInteractionIndex >= 0) // interaction is happening
         {
             arrowContainer.classList.add('hidden');
-            
             dialogElement.classList.remove('hidden');
-            dialogElement.innerHTML = 
-                '<p><b>' + this.character.name + '</b><br>' + 
-                this.dialogue[this.dialogueIndex].text + '</p>';
-                
             characterElement.classList.remove('hidden');
-            characterElement.innerHTML =
-                '<img src=' + this.character.image + ' class="unselectable">';
+
+            const interaction = this.interactions[currentInteractionIndex];
+
+            if (currentDialogIndex < interaction.dialog.length)
+            {
+                interaction.display(currentDialogIndex);
+            }
+            else
+            {
+                /**
+                 * end discussion, no more lines to say
+                 */
+                currentInteractionIndex = -1;
+                currentDialogIndex = 0;
+            }
         }
         else
         {
             dialogElement.classList.add('hidden');
             characterElement.classList.add('hidden');
             arrowContainer.classList.remove('hidden');
+
+            // UPDATE ARROWS
+            for (const key in ARROWS)
+            {
+                const id = ARROWS[key];
+                const arrowElement = document.getElementById(id);
+                if (this.arrows.find(arrow => arrow[0] == id))
+                {
+                    arrowElement.classList.remove('hidden');
+                }
+                else
+                {
+                    arrowElement.classList.add('hidden');
+                }
+            }
         }
     }
 
-    nextDialogue()
+    changeLocation(arrowID)
     {
-        this.dialogueIndex++;
-        this.dialogueIndex %= this.dialogue.length;
+        const arrow = this.arrows.find(a => a[0] == arrowID);
+        if (arrow)
+        {
+            currentLocationKey = arrow[1];
+        }
     }
 }

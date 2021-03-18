@@ -13,18 +13,18 @@
     <div id="character" class="unselectable"></div>
     <div id="dialogue" class="unselectable"></div>
     <div id="arrow-container" class="unselectable">
-        <img src=images/arrow1.png id=arrow-top-center class="arrow">
-        <img src=images/arrow2.png id=arrow-bottom-center class="arrow">
-        <img src=images/arrow3.png id=arrow-center-right class="arrow">
-        <img src=images/arrow3.png id=arrow-center-left class="arrow">
-        <img src=images/arrow4.png id=arrow-top-right class="arrow">
-        <img src=images/arrow4.png id=arrow-top-left class="arrow">
-        <img src=images/arrow2.png id=arrow-bottom-left class="arrow">
-        <img src=images/arrow2.png id=arrow-bottom-right class="arrow">
+        <img src=images/arrow1.png onclick='changeLocation("arrow-top-center")' id=arrow-top-center class="arrow">
+        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-center")' id=arrow-bottom-center class="arrow">
+        <img src=images/arrow3.png onclick='changeLocation("arrow-center-right")' id=arrow-center-right class="arrow">
+        <img src=images/arrow3.png onclick='changeLocation("arrow-center-left")' id=arrow-center-left class="arrow">
+        <img src=images/arrow4.png onclick='changeLocation("arrow-top-right")' id=arrow-top-right class="arrow">
+        <img src=images/arrow4.png onclick='changeLocation("arrow-top-left")' id=arrow-top-left class="arrow">
+        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-left")' id=arrow-bottom-left class="arrow">
+        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-right")' id=arrow-bottom-right class="arrow">
     </div>
     
-    <script src=Level.js></script>
-    <script src=levelList.js></script>
+    <script src=Location.js></script>
+    <script src=locations.js></script>
     <script src=game.js></script>
 </body>
 </html>
