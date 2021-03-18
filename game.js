@@ -11,12 +11,14 @@ function update()
     currentLevel.draw();
 }
 
+setInterval(update, 30); // ???
+
 document.getElementById('dialogue').addEventListener('mouseup', () =>
 {
     if (currentLevel)
     {
         currentLevel.nextDialogue();
-        update();
+        // update();
     }
 });
 
@@ -27,7 +29,7 @@ window.addEventListener('keydown', (e) =>
         if (currentLevel)
         {
             currentLevel.nextDialogue();
-            update();
+            // update();
         }
     }
 });
