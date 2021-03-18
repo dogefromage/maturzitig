@@ -55,7 +55,7 @@ body
     padding: 15px;
 
     border: solid;
-    border-color: rgb(53, 53, 53);
+    border-color: rgb(26, 26, 26);
     border-width: 7px;
 
     border-radius: 20px;
@@ -64,7 +64,7 @@ body
 
 #dialogue p
 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -87,4 +87,13 @@ body
     height: 300px;
     width: 500px;
     z-index: 100;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

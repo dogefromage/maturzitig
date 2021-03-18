@@ -1,9 +1,35 @@
 
 
 let currentLevelIndex = 0;
+let currentLevel;
+
 function update()
 {
-    const level = levels[currentLevelIndex];
-    level.draw();
+    currentLevelIndex %= levels.length;
+
+    currentLevel = levels[currentLevelIndex];
+    currentLevel.draw();
 }
+
+document.getElementById('dialogue').addEventListener('mouseup', () =>
+{
+    if (currentLevel)
+    {
+        currentLevel.nextDialogue();
+        update();
+    }
+});
+
+window.addEventListener('keydown', (e) =>
+{
+    if (e.code == 'Enter' || e.code == 'Space')
+    {
+        if (currentLevel)
+        {
+            currentLevel.nextDialogue();
+            update();
+        }
+    }
+});
+
 update();
