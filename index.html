@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="loading-screen"><h1 class='unselectable'>Loading...</h1></div>
     <div id="background" class="unselectable"></div>
+    <div id="background-characters" class="unselectable"></div>
     <div id="character" class="unselectable"></div>
     <div id="dialogue" class="unselectable"></div>
     <div id="arrow-container" class="unselectable">
-        <img src=images/arrow1.png onclick='changeLocation("arrow-top-center")' id=arrow-top-center class="arrow">
-        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-center")' id=arrow-bottom-center class="arrow">
-        <img src=images/arrow3.png onclick='changeLocation("arrow-center-right")' id=arrow-center-right class="arrow">
-        <img src=images/arrow3.png onclick='changeLocation("arrow-center-left")' id=arrow-center-left class="arrow">
-        <img src=images/arrow4.png onclick='changeLocation("arrow-top-right")' id=arrow-top-right class="arrow">
-        <img src=images/arrow4.png onclick='changeLocation("arrow-top-left")' id=arrow-top-left class="arrow">
-        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-left")' id=arrow-bottom-left class="arrow">
-        <img src=images/arrow2.png onclick='changeLocation("arrow-bottom-right")' id=arrow-bottom-right class="arrow">
+        <img src=images/arrow1.png class="arrow undraggable" onclick='changeLocation("arrow-top-center")' id=arrow-top-center>
+        <img src=images/arrow2.png class="arrow undraggable" onclick='changeLocation("arrow-bottom-center")' id=arrow-bottom-center>
+        <img src=images/arrow3.png class="arrow undraggable" onclick='changeLocation("arrow-center-right")' id=arrow-center-right>
+        <img src=images/arrow3.png class="arrow undraggable" onclick='changeLocation("arrow-center-left")' id=arrow-center-left>
+        <img src=images/arrow4.png class="arrow undraggable" onclick='changeLocation("arrow-top-right")' id=arrow-top-right>
+        <img src=images/arrow4.png class="arrow undraggable" onclick='changeLocation("arrow-top-left")' id=arrow-top-left>
+        <img src=images/arrow2.png class="arrow undraggable" onclick='changeLocation("arrow-bottom-left")' id=arrow-bottom-left>
+        <img src=images/arrow2.png class="arrow undraggable" onclick='changeLocation("arrow-bottom-right")' id=arrow-bottom-right>
     </div>
-    
     <script src=Location.js></script>
     <script src=locations.js></script>
     <script src=game.js></script>

@@ -16,6 +16,22 @@ body
     padding: 0;
 }
 
+#loading-screen
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100000;
+
+    background-color: white;
+}
+
 #background
 {
     top: 0;
@@ -89,13 +105,24 @@ body
     z-index: 100;
 }
 
-.unselectable {
+.unselectable 
+{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.undraggable
+{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #arrow-container
@@ -206,4 +233,16 @@ body
 .hidden
 {
     visibility: hidden;
+}
+
+#background-characters
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

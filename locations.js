@@ -14,7 +14,14 @@ locations.set('neui-turnhalle',
                     new Sentence('At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'),
                     new Sentence('- Damer'),
                 ],
-                character: new Character('ULI', 'images/damer.jpg')}
+                character: new Character({
+                    name: 'ULI', 
+                    dialogImage: 'images/damer.jpg',
+                    background: {
+                        scale: 0.4,
+                        position: { x: 0.5, y: 0.5 } // in screen %
+                    }
+                })},
             ),
         ],
         background: 'images/neui-turnhalle.jpg',

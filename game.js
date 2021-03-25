@@ -19,11 +19,12 @@ function update()
     }
 }
 
-setInterval(update, 500); // necessary ???
+// setInterval(update, 500); // necessary ???
 
 document.getElementById('dialogue').addEventListener('mouseup', () =>
 {
     currentDialogIndex++;
+    update();
 });
 
 window.addEventListener('keydown', (e) =>
@@ -31,6 +32,7 @@ window.addEventListener('keydown', (e) =>
     if (e.code == 'Enter' || e.code == 'Space')
     {
         currentDialogIndex++;
+        update();
     }
 });
 
@@ -40,6 +42,12 @@ function changeLocation(arrowID)
     {
         currentLocation.changeLocation(arrowID);
     }
+    update();
 }
 
-update();
+// simulate loading time
+setTimeout(() => 
+{
+    update();
+    document.getElementById('loading-screen').classList.add('hidden');
+}, 300)
