@@ -1,5 +1,3 @@
-## maturzitig 4A
+# Maturzitig 4A
 
-# www.maturzitig4a.me
-
-in produktion
+## www.maturzitig4a.me
