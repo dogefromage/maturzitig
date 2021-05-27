@@ -37,12 +37,14 @@ function update()
     }
 }
 
-// clicked on dialogue
-document.getElementById('dialogue').addEventListener('mouseup', () =>
+function nextSentence()
 {
     currentDialogueIndex++;
     update();
-});
+}
+dialogueElement.addEventListener('click', nextSentence);
+backgroundElement.addEventListener('click', nextSentence);
+characterElement.addEventListener('click', nextSentence);
 
 window.addEventListener('keydown', (e) =>
 {
