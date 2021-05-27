@@ -1,17 +1,27 @@
 
 
+// DOM
+const backgroundElement = document.getElementById('background');
+const dialogueElement = document.getElementById('dialogue');
+const characterElement = document.getElementById('character');
+const arrowContainer = document.getElementById('arrow-container');
+const backgroundCharacterContainer = document.getElementById('background-characters');
+
+// default location
 let currentLocationKey = 'neui-turnhalle';
+// location object
 let currentLocation;
 
-let currentDialogIndex = 0;
+let currentDialogueIndex = 0;
 let currentInteractionIndex = -1;
 
-function update()
+function loadLocation()
 {
     currentLocation = locations.get(currentLocationKey);
+    
     if (currentLocation)
     {
-        currentLocation.display(currentInteractionIndex, currentDialogIndex);
+        currentLocation.load();
     }
     else
     {
@@ -19,11 +29,18 @@ function update()
     }
 }
 
-// setInterval(update, 500); // necessary ???
+function update()
+{
+    if (currentLocation)
+    {
+        currentLocation.update();
+    }
+}
 
+// clicked on dialogue
 document.getElementById('dialogue').addEventListener('mouseup', () =>
 {
-    currentDialogIndex++;
+    currentDialogueIndex++;
     update();
 });
 
@@ -31,7 +48,7 @@ window.addEventListener('keydown', (e) =>
 {
     if (e.code == 'Enter' || e.code == 'Space')
     {
-        currentDialogIndex++;
+        currentDialogueIndex++;
         update();
     }
 });
@@ -40,14 +57,19 @@ function changeLocation(arrowID)
 {
     if (currentLocation)
     {
-        currentLocation.changeLocation(arrowID);
+        const arrow = currentLocation.arrows.find(a => a[0] == arrowID);
+        if (arrow)
+        {
+            currentLocationKey = arrow[1];
+        }
     }
-    update();
+
+    loadLocation();
 }
 
 // simulate loading time
 setTimeout(() => 
 {
-    update();
+    loadLocation();
     document.getElementById('loading-screen').classList.add('hidden');
 }, 300)
