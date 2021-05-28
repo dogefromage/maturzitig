@@ -23,6 +23,8 @@ class Character
     }
 }
 
+let loadImageEvent = false;
+
 /**
  * e interaktion mitere person: dialog, etc.
  */
@@ -42,10 +44,15 @@ class Interaction
             this.dialogue[currentDialogueIndex].text + '</p>';
 
         characterElement.src = this.character.dialogueImage;
-            
-        if (interactionElement.classList.contains('hidden'))
+
+        if (!loadImageEvent)
         {
-            interactionElement.classList.remove('hidden');
+            characterElement.addEventListener('load', () =>
+            {
+                // only display interaction div after image has fully loaded
+                interactionElement.classList.remove('hidden');
+            });
+            loadImageEvent = true;
         }
     }
 }
@@ -77,7 +84,6 @@ class Location
 
     load()
     {
-        
         interactionElement.classList.add('hidden');
 
         // background
