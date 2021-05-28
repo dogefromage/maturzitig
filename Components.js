@@ -40,9 +40,13 @@ class Interaction
         dialogueElement.innerHTML = 
             '<p><b>' + this.character.name + '</b><br>' + 
             this.dialogue[currentDialogueIndex].text + '</p>';
-        
-        characterElement.innerHTML =
-            '<img src=' + this.character.dialogueImage + ' class="unselectable undraggable">';
+
+        characterElement.src = this.character.dialogueImage;
+            
+        if (interactionElement.classList.contains('hidden'))
+        {
+            interactionElement.classList.remove('hidden');
+        }
     }
 }
 
@@ -73,6 +77,9 @@ class Location
 
     load()
     {
+        
+        interactionElement.classList.add('hidden');
+
         // background
         backgroundElement.innerHTML = '<img src=' + this.background + ' class="undraggable unselectable">';
 
@@ -125,11 +132,6 @@ class Location
 
             backgroundCharacterContainer.appendChild(imgNode); 
         }
-        
-        // hide dialog
-        dialogueElement.classList.add('hidden');
-        // hide character
-        characterElement.classList.add('hidden');
     }
 
     update()
@@ -138,8 +140,6 @@ class Location
         {
             arrowContainer.classList.add('hidden');
             backgroundCharacterContainer.classList.add('hidden');
-            dialogueElement.classList.remove('hidden');
-            characterElement.classList.remove('hidden');
 
             const interaction = this.interactions[currentInteractionIndex];
 
@@ -161,8 +161,7 @@ class Location
         }
         else
         {
-            dialogueElement.classList.add('hidden');
-            characterElement.classList.add('hidden');
+            interactionElement.classList.add('hidden');
             
             arrowContainer.classList.remove('hidden');
             backgroundCharacterContainer.classList.remove('hidden');

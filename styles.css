@@ -2,10 +2,27 @@
 {
     /* font-family: "brandon-grotesque",sans-serif; */
     font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 22px;
+
+    --arrow-scale: 1;
+}
+
+@media screen and (max-width: 700px)
+{
+    * 
+    {
+        font-size: 18px;
+    }
+
+    .arrow
+    {
+        --arrow-scale: 0.7;
+    }
 }
 
 body
 {
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -53,38 +70,7 @@ body
     opacity: 0.5;
 }
 
-#dialogue
-{
-    position: absolute;
-    bottom: 20px;
-    
-    width: 80%;
-    max-width: 800px;
-    min-height: 100px;
-    margin: 20px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    
-    background: #ffffff;
-    padding: 15px;
-
-    border: solid;
-    border-color: rgb(26, 26, 26);
-    border-width: 7px;
-
-    border-radius: 20px;
-    z-index: 200;
-}
-
-#dialogue p
-{
-    font-size: 20px;
-    margin: 0;
-}
-
-#character
+#interaction
 {
     position: absolute;
     left: 0;
@@ -93,16 +79,53 @@ body
     bottom: 0;
     width: 100%;
     height: 100%;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-#character img
+@media (orientation: landscape)
 {
-    height: 300px;
-    width: 400px;
+    #interaction
+    {
+        justify-content: center;
+    }
+}
+
+#dialogue
+{
+    width: 80%;
+    max-width: 800px;
+    min-height: 150px;
+    margin: 7vh;
+    
+    background: #fff4c2;
+    padding: 18px;
+
+    border-style: ridge;
+    border-color: rgb(30, 100, 24);
+    border-width: 10px;
+
+    border-radius: 20px;
+    z-index: 200;
+
+    box-shadow: 20px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+#dialogue p
+{
+    margin: 0;
+}
+
+#character
+{
+    margin: 9vh;
+    width: 80%;
+    max-width: 300px;
     z-index: 100;
+    
+    box-shadow: 20px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 .unselectable 
@@ -114,9 +137,11 @@ body
     -ms-user-select: none;
     user-select: none;
     
+    /* invisible to clicks */
     pointer-events: none;
 }
 
+/* make children clickable again */
 .unselectable *
 {
     pointer-events: all;
@@ -162,7 +187,7 @@ body
     right: 0;
     top: 0;
 
-    transform: rotate(-90deg) scale(0.4); /* Equal to rotateZ(45deg) */
+    transform: rotate(-90deg) scale(calc(0.4 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-bottom-center
@@ -174,7 +199,7 @@ body
     right: 0;
     bottom: 0;
 
-    transform: rotate(90deg) scale(0.45); /* Equal to rotateZ(45deg) */
+    transform: rotate(90deg) scale(calc(0.45 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-center-right
@@ -186,7 +211,7 @@ body
     top: 0;
     bottom: 0;
 
-    transform: scale(0.4); /* Equal to rotateZ(45deg) */
+    transform: scale(calc(0.4 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-center-left
@@ -198,7 +223,7 @@ body
     top: 0;
     bottom: 0;
 
-    transform: scale(-0.4, 0.4); /* Equal to rotateZ(45deg) */
+    transform: scale(calc(-0.4 * var(--arrow-scale)), calc(0.4 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-top-right
@@ -207,7 +232,7 @@ body
     right: 0;
     top: 0;
 
-    transform: rotate(140deg) scale(-0.35, 0.35); /* Equal to rotateZ(45deg) */
+    transform: rotate(140deg) scale(calc(-0.35 * var(--arrow-scale)), calc(0.35 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-top-left
@@ -216,7 +241,7 @@ body
     left: 0;
     top: 0;
 
-    transform: rotate(230deg) scale(0.35); /* Equal to rotateZ(45deg) */
+    transform: rotate(230deg) scale(calc(0.35 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-bottom-left
@@ -225,7 +250,7 @@ body
     left: 0;
     bottom: 0;
 
-    transform: rotate(135deg) scale(0.4); /* Equal to rotateZ(45deg) */
+    transform: rotate(135deg) scale(calc(0.4 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
 }
 
 #arrow-bottom-right
@@ -234,7 +259,52 @@ body
     right: 0;
     bottom: 0;
 
-    transform: rotate(225deg) scale(-0.4, 0.4); /* Equal to rotateZ(45deg) */
+    transform: rotate(225deg) scale(calc(-0.4 * var(--arrow-scale)), calc(0.4 * var(--arrow-scale))); /* Equal to rotateZ(45deg) */
+}
+
+
+@media screen and (max-width: 700px)
+{
+    #arrow-top-center
+    {
+        transform-origin: 45% 34%;
+    }
+
+    #arrow-bottom-center
+    {
+        transform-origin: 44% 65%;
+    }
+
+    #arrow-center-right
+    {
+        transform-origin: 88% 50%;
+    }
+
+    #arrow-center-left
+    {
+        transform-origin: 30% 50%;
+    }
+
+    #arrow-top-right
+    {
+        transform-origin: 94% 23%;
+    }
+
+    #arrow-top-left
+    {
+        transform-origin: 20% 45%;
+    }
+
+    #arrow-bottom-left
+    {
+        transform-origin: 30% 60%;
+    }
+
+    #arrow-bottom-right
+    {
+        transform-origin: 78% 69%;
+    }
+
 }
 
 .hidden

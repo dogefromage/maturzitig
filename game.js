@@ -1,9 +1,9 @@
 
-
 // DOM
 const backgroundElement = document.getElementById('background');
 const dialogueElement = document.getElementById('dialogue');
 const characterElement = document.getElementById('character');
+const interactionElement = document.getElementById('interaction');
 const arrowContainer = document.getElementById('arrow-container');
 const backgroundCharacterContainer = document.getElementById('background-characters');
 
