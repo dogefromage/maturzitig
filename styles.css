@@ -5,6 +5,9 @@
     font-size: 22px;
 
     --arrow-scale: 1;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @media screen and (max-height: 700px)
