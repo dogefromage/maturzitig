@@ -29,7 +29,14 @@ locations.set('neui-turnhalle',
         background: 'images/locations/neui-turnhalle.jpg',
         arrows: 
         [
-            [ ARROWS.BOTTOM_RIGHT, 'igang-süd' ],
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_RIGHT, 'stäge-igang' ],
         ],
     }),
 );
@@ -57,7 +64,432 @@ locations.set('igang-süd',
         background: 'images/locations/igang-süd.jpg',
         arrows: 
         [
-            [ ARROWS.TOP_CENTER, 'neui-turnhalle' ]
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'stäge-igang' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'garte-1' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_RIGHT, 'hb' ],
+        ]
+    })
+);
+
+locations.set('glas-dach', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/glas-dach.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('stäge-ph', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/stäge-ph.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('stei-monument', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/stei-monument.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('garte-1', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/garte-1.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'garte-2' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'igang-süd' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('garte-2', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/garte-2.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'x-holz' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'garte-1' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('x-holz', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/x-holz.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'x-kopierer' ],
+            [ ARROWS.CENTER_RIGHT, 'igang-west' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_RIGHT, 'garte-2' ],
+        ]
+    })
+);
+
+locations.set('x-kopierer', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/x-kopierer.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'x-holz' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('igang-west', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/igang-west.jpeg',
+        arrows:
+        [
+            [ ARROWS.TOP_LEFT, 'mensa-usse' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'x-holz' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('mensa-usse', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/mensa-usse.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'mensa' ],
+            [ ARROWS.BOTTOM_LEFT, 'igang-west' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('mensa', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/mensa.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            [ ARROWS.TOP_RIGHT, 'u-büecher' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'mensa-usse' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('schüelerruhm-igang', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/schüelerruhm-igang.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('hb', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/hb2.jpg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'igang-süd' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            [ ARROWS.BOTTOM_LEFT, 'gleis-1' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('u-büecher', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/u-büecher.jpeg',
+        arrows:
+        [
+            [ ARROWS.TOP_LEFT, 'e-wand' ],
+            [ ARROWS.TOP_CENTER, 'chraftruhm' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'mensa' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('u-stäge', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/u-stäge.jpeg',
+        arrows:
+        [
+            [ ARROWS.TOP_LEFT, 'igang-west' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            [ ARROWS.BOTTOM_LEFT, 'u-büecher' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('chraftruhm', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/chraftruhm.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('e-wand',
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/e-wand.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'liechthof' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('stäge-igang', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/stäge-igang.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'neui-turnhalle' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'igang-süd' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('liechthof', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/liechthof.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('glasgang', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/glasgang.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('h-stäge', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/h-stäge.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('h11', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/h11.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('gleis-1', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/gleis-1.jpg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
 );

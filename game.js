@@ -8,7 +8,7 @@ const arrowContainer = document.getElementById('arrow-container');
 const backgroundCharacterContainer = document.getElementById('background-characters');
 
 // default location
-let currentLocationKey = 'neui-turnhalle';
+let currentLocationKey = 'hb';
 // location object
 let currentLocation;
 
@@ -62,16 +62,47 @@ function changeLocation(arrowID)
         const arrow = currentLocation.arrows.find(a => a[0] == arrowID);
         if (arrow)
         {
-            currentLocationKey = arrow[1];
+            let newLocationKey = arrow[1];
+
+            if (currentLocationKey == 'hb' && newLocationKey == 'igang-süd')
+            {
+                showLoadingScreen();
+            }
+
+            currentLocationKey = newLocationKey;
         }
     }
 
     loadLocation();
 }
 
-// simulate loading time
-setTimeout(() => 
+
+const loadingScreen = document.getElementById('loading-screen');
+function showLoadingScreen()
 {
-    loadLocation();
-    document.getElementById('loading-screen').classList.add('hidden');
-}, 300)
+    loadingScreen.classList.remove('hidden');
+
+    // simulate loading time
+    setTimeout(() => 
+    {
+        loadingScreen.classList.add('hidden');
+    }, 4000)
+}
+
+loadLocation();
+
+const landscapeOverlay = document.getElementById('landscape-overlay');
+setInterval(() =>
+{
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+
+    if (h > w)
+    {
+        landscapeOverlay.classList.remove('hidden');
+    }
+    else
+    {
+        landscapeOverlay.classList.add('hidden');
+    }
+}, 500);
