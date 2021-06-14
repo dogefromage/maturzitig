@@ -64,14 +64,90 @@ locations.set('igang-süd',
         background: 'images/locations/igang-süd.jpg',
         arrows: 
         [
-            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_LEFT, 'bibi' ],
             [ ARROWS.TOP_CENTER, 'stäge-igang' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             [ ARROWS.CENTER_LEFT, 'garte-1' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
-            [ ARROWS.BOTTOM_RIGHT, 'hb' ],
+            // [ ARROWS.BOTTOM_RIGHT, 'hb' ],
+        ]
+    })
+);
+
+locations.set('bibi', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/bibi.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'igang-süd' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
+            [ ARROWS.BOTTOM_LEFT, 'abwart' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('abwart', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/abwart.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'stäge-wasserspender' ],
+            [ ARROWS.TOP_RIGHT, 'bibi' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('abwart', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/abwart.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'stäge-wasserspender' ],
+            [ ARROWS.TOP_RIGHT, 'bibi' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('stäge-wasserspender', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/stäge-wasserspender.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'abwart' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
 );
@@ -311,8 +387,8 @@ locations.set('u-büecher',
         background: 'images/locations/u-büecher.jpeg',
         arrows:
         [
-            [ ARROWS.TOP_LEFT, 'e-wand' ],
-            [ ARROWS.TOP_CENTER, 'chraftruhm' ],
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'e-wand' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
@@ -368,11 +444,11 @@ locations.set('e-wand',
         background: 'images/locations/e-wand.jpeg',
         arrows:
         [
-            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_LEFT, 'abwart' ],
             // [ ARROWS.TOP_CENTER, '' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            [ ARROWS.CENTER_LEFT, 'liechthof' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'h11' ],
+            [ ARROWS.CENTER_RIGHT, 'liechthof' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
@@ -409,8 +485,8 @@ locations.set('liechthof',
             // [ ARROWS.TOP_LEFT, '' ],
             // [ ARROWS.TOP_CENTER, '' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
+            [ ARROWS.CENTER_LEFT, 'e-wand' ],
+            [ ARROWS.CENTER_RIGHT, 'sekretariat' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
@@ -418,7 +494,83 @@ locations.set('liechthof',
     })
 );
 
-locations.set('glasgang', 
+locations.set('sekretariat',
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/sekretariat.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'computerrum' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'liechthof' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('computerrum',
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/computerrum.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'h-zentral' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_RIGHT, 'sekretariat' ],
+        ]
+    })
+);
+
+locations.set('h-zentral',
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/h-zentral.jpeg',
+        arrows:
+        [
+            [ ARROWS.TOP_LEFT, 'h11' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'computerrum' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('h11', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/h11.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'h-zentral' ],
+            [ ARROWS.BOTTOM_RIGHT, 'e-wand' ],
+        ]
+    })
+);
+
+locations.set('glasgang',
     new Location(
     {
         interactions: [],
@@ -442,25 +594,6 @@ locations.set('h-stäge',
     {
         interactions: [],
         background: 'images/locations/h-stäge.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('h11', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/h11.jpeg',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],

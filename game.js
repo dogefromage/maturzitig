@@ -7,8 +7,24 @@ const interactionElement = document.getElementById('interaction');
 const arrowContainer = document.getElementById('arrow-container');
 const backgroundCharacterContainer = document.getElementById('background-characters');
 
+const fullscreenElement = document.getElementById('fullscreen');
+fullscreenElement.addEventListener('click', () =>
+{
+    fullscreenElement.classList.add('hidden');
+    const docElement = document.documentElement;
+
+    if (docElement.requestFullscreen) {
+        docElement.requestFullscreen();
+    } else if (docElement.webkitRequestFullscreen) { /* Safari */
+        docElement.webkitRequestFullscreen();
+    } else if (docElement.msRequestFullscreen) { /* IE11 */
+        docElement.msRequestFullscreen();
+    }
+});
+
 // default location
-let currentLocationKey = 'hb';
+// let currentLocationKey = 'hb';
+let currentLocationKey = 'igang-süd';
 // location object
 let currentLocation;
 
