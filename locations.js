@@ -98,26 +98,23 @@ locations.set('bibi',
 locations.set('abwart', 
     new Location(
     {
-        interactions: [],
-        background: 'images/locations/abwart.jpeg',
-        arrows:
+        interactions: 
         [
-            // [ ARROWS.TOP_LEFT, '' ],
-            [ ARROWS.TOP_CENTER, 'stäge-wasserspender' ],
-            [ ARROWS.TOP_RIGHT, 'bibi' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('abwart', 
-    new Location(
-    {
-        interactions: [],
+            new Interaction(
+                {
+                    character: fabiCharacter,
+                    characterPlacement:
+                    {
+                        size: 40, // in %
+                        x: 20,  // in %
+                        y: 50, // in %
+                    },
+                    dialogue: 
+                    [
+                        new Sentence('Ehre'),
+                    ],
+                }),
+        ],
         background: 'images/locations/abwart.jpeg',
         arrows:
         [
@@ -212,7 +209,22 @@ locations.set('stei-monument',
 locations.set('garte-1', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: giusiCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 40, // in %
+                    x: 40,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/garte-1.jpeg',
         arrows:
         [
@@ -250,7 +262,22 @@ locations.set('garte-2',
 locations.set('x-holz', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: joelCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 55, // in %
+                    x: 30,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/x-holz.jpeg',
         arrows:
         [
@@ -307,7 +334,22 @@ locations.set('igang-west',
 locations.set('mensa-usse', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: tobiCharacter,
+                dialogue:
+                [
+                    new Sentence('Fear me'),
+                ],
+                characterPlacement:
+                {
+                    size: 30, // in %
+                    x: 20,  // in %
+                    y: 30, // in %
+                },
+            })
+        ],
         background: 'images/locations/mensa-usse.jpeg',
         arrows:
         [
