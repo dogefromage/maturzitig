@@ -41,7 +41,7 @@ function loadLocation()
     }
     else
     {
-        console.log("couldn't find location: " + currentLocationKey);
+        alert("couldn't find location: " + currentLocationKey);
     }
 }
 

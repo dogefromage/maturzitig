@@ -41,7 +41,7 @@ locations.set('neui-turnhalle',
     }),
 );
 
-locations.set('igang-süd',
+locations.set('roti-pfiler',
     new Location(
     {
         interactions: 
@@ -61,41 +61,123 @@ locations.set('igang-süd',
                 ],
             }),
         ],
-        background: 'images/locations/igang-süd.jpg',
+        background: 'images/locations/roti-pfiler.jpg',
         arrows: 
-        [
-            [ ARROWS.TOP_LEFT, 'bibi' ],
-            [ ARROWS.TOP_CENTER, 'stäge-igang' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            [ ARROWS.CENTER_LEFT, 'garte-1' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, 'hb' ],
-        ]
-    })
-);
-
-locations.set('bibi', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/bibi.jpeg',
-        arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
             [ ARROWS.TOP_CENTER, 'igang-süd' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
-            [ ARROWS.BOTTOM_LEFT, 'abwart' ],
+            [ ARROWS.CENTER_LEFT, 'garte-1' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
 );
 
-locations.set('abwart', 
+locations.set('igang-süd',
+    new Location(
+    {
+        interactions: 
+        [
+        ],
+        background: 'images/locations/igang-süd.jpeg',
+        arrows: 
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'schiebetür' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'roti-pfiler' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('schiebetür',
+    new Location(
+    {
+        interactions: 
+        [
+        ],
+        background: 'images/locations/schiebetür.jpeg',
+        arrows: 
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'igang-inne' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_RIGHT, 'stäge-igang' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'igang-süd' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('igang-inne',
+    new Location(
+    {
+        interactions: 
+        [
+        ],
+        background: 'images/locations/igang-inne.jpeg',
+        arrows: 
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'wasserspänder' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'schiebetür' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('wasserspänder', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/wasserspänder.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            [ ARROWS.TOP_CENTER, 'zentrum' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'igang-inne' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('zentrum', 
+    new Location(
+    {
+        interactions: [],
+        background: 'images/locations/zentrum.jpeg',
+        arrows:
+        [
+            // [ ARROWS.TOP_LEFT, '' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'liechthof' ],
+            [ ARROWS.CENTER_RIGHT, 'e-stäge' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'wasserspänder' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('e-stäge', 
     new Location(
     {
         interactions: 
@@ -105,8 +187,8 @@ locations.set('abwart',
                     character: fabiCharacter,
                     characterPlacement:
                     {
-                        size: 40, // in %
-                        x: 20,  // in %
+                        size: 60, // in %
+                        x: 15,  // in %
                         y: 50, // in %
                     },
                     dialogue: 
@@ -115,16 +197,37 @@ locations.set('abwart',
                     ],
                 }),
         ],
-        background: 'images/locations/abwart.jpeg',
+        background: 'images/locations/e-stäge.jpeg',
+        arrows:
+        [
+            [ ARROWS.TOP_LEFT, 'e-hinde' ],
+            [ ARROWS.TOP_CENTER, 'h11' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
+            // [ ARROWS.CENTER_LEFT, '' ],
+            // [ ARROWS.CENTER_RIGHT, '' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'zentrum' ],
+            // [ ARROWS.BOTTOM_RIGHT, '' ],
+        ]
+    })
+);
+
+locations.set('e-hinde', 
+    new Location(
+    {
+        interactions: 
+        [
+        ],
+        background: 'images/locations/e-hinde.jpeg',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
-            [ ARROWS.TOP_CENTER, 'stäge-wasserspender' ],
-            [ ARROWS.TOP_RIGHT, 'bibi' ],
+            // [ ARROWS.TOP_CENTER, '' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
-            [ ARROWS.CENTER_RIGHT, 'e-wand' ],
+            [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'e-stäge' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
@@ -232,7 +335,7 @@ locations.set('garte-1',
             [ ARROWS.TOP_CENTER, 'garte-2' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
-            [ ARROWS.CENTER_RIGHT, 'igang-süd' ],
+            [ ARROWS.CENTER_RIGHT, 'roti-pfiler' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
@@ -430,7 +533,7 @@ locations.set('u-büecher',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
-            [ ARROWS.TOP_CENTER, 'e-wand' ],
+            [ ARROWS.TOP_CENTER, 'chraftruhm' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
@@ -449,7 +552,7 @@ locations.set('u-stäge',
         arrows:
         [
             [ ARROWS.TOP_LEFT, 'igang-west' ],
-            // [ ARROWS.TOP_CENTER, '' ],
+            [ ARROWS.TOP_CENTER, 'e-hinde' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
@@ -479,24 +582,24 @@ locations.set('chraftruhm',
     })
 );
 
-locations.set('e-wand',
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/e-wand.jpeg',
-        arrows:
-        [
-            [ ARROWS.TOP_LEFT, 'abwart' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            [ ARROWS.CENTER_LEFT, 'h11' ],
-            [ ARROWS.CENTER_RIGHT, 'liechthof' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
+// locations.set('e-wand',
+//     new Location(
+//     {
+//         interactions: [],
+//         background: 'images/locations/e-wand.jpeg',
+//         arrows:
+//         [
+//             [ ARROWS.TOP_LEFT, 'abwart' ],
+//             // [ ARROWS.TOP_CENTER, '' ],
+//             // [ ARROWS.TOP_RIGHT, '' ],
+//             [ ARROWS.CENTER_LEFT, 'h11' ],
+//             [ ARROWS.CENTER_RIGHT, 'liechthof' ],
+//             // [ ARROWS.BOTTOM_LEFT, '' ],
+//             [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
+//             // [ ARROWS.BOTTOM_RIGHT, '' ],
+//         ]
+//     })
+// );
 
 locations.set('stäge-igang', 
     new Location(
@@ -511,7 +614,7 @@ locations.set('stäge-igang',
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'igang-süd' ],
+            [ ARROWS.BOTTOM_CENTER, 'schiebetür' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
@@ -527,7 +630,7 @@ locations.set('liechthof',
             // [ ARROWS.TOP_LEFT, '' ],
             // [ ARROWS.TOP_CENTER, '' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            [ ARROWS.CENTER_LEFT, 'e-wand' ],
+            [ ARROWS.CENTER_LEFT, 'zentrum' ],
             [ ARROWS.CENTER_RIGHT, 'sekretariat' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
@@ -607,7 +710,7 @@ locations.set('h11',
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             [ ARROWS.BOTTOM_CENTER, 'h-zentral' ],
-            [ ARROWS.BOTTOM_RIGHT, 'e-wand' ],
+            [ ARROWS.BOTTOM_RIGHT, 'e-stäge' ],
         ]
     })
 );

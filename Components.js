@@ -39,11 +39,14 @@ class Interaction
 
     display()
     {
-        dialogueElement.innerHTML = 
-            '<p><b>' + this.character.name + '</b><br>' + 
-            this.dialogue[currentDialogueIndex].text + '</p>';
+        let dialogText = '<b>' + this.character.name + '</b><br>';
 
-        characterElement.src = this.character.dialogueImage;
+        if (this.dialogue?.length > 0)
+        {
+            dialogText += this.dialogue[currentDialogueIndex].text;
+        }
+
+        dialogueElement.innerHTML = '<p>' + dialogText + '</p>';
 
         if (!loadImageEvent)
         {
@@ -54,6 +57,8 @@ class Interaction
             });
             loadImageEvent = true;
         }
+
+        characterElement.src = this.character.dialogueImage;
     }
 }
 
@@ -112,31 +117,35 @@ class Location
         {
             backgroundCharacterContainer.removeChild(backgroundCharacterContainer.firstChild);
         }
-        // add new
-        for (let i = 0; i < this.interactions.length; i++)
+
+        if (this.interactions)
         {
-            const interaction = this.interactions[i];
-
-            const imgNode = document.createElement('img');
-            imgNode.src = interaction.character.backgroundImage;
-            imgNode.classList.add('unselectable');
-            imgNode.classList.add('undraggable');
-
-            // position
-            const placement = interaction.characterPlacement;
-            imgNode.style.height = placement.size + "%";
-            imgNode.style.left = placement.x + "%";
-            imgNode.style.top = placement.y + "%";
-
-            // on click
-            imgNode.addEventListener('click', (e) =>
+            // add new
+            for (let i = 0; i < this.interactions.length; i++)
             {
-                currentInteractionIndex = i;
-                currentDialogueIndex = 0;
-                update();
-            });
-
-            backgroundCharacterContainer.appendChild(imgNode); 
+                const interaction = this.interactions[i];
+    
+                const imgNode = document.createElement('img');
+                imgNode.src = interaction.character.backgroundImage;
+                imgNode.classList.add('unselectable');
+                imgNode.classList.add('undraggable');
+    
+                // position
+                const placement = interaction.characterPlacement;
+                imgNode.style.height = placement.size + "%";
+                imgNode.style.left = placement.x + "%";
+                imgNode.style.top = placement.y + "%";
+    
+                // on click
+                imgNode.addEventListener('click', (e) =>
+                {
+                    currentInteractionIndex = i;
+                    currentDialogueIndex = 0;
+                    update();
+                });
+    
+                backgroundCharacterContainer.appendChild(imgNode); 
+            }
         }
     }
 
