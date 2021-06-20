@@ -3,7 +3,7 @@
 const dammerCharacter = new Character(
 {
     name: 'ULI',
-    dialogueImage: 'images/characters/damer.jpg',
+    dialogueImage: 'images/characters/uli.jpeg',
     backgroundImage: 'images/characters/dammer_postulate.png',
 });
 
@@ -24,14 +24,14 @@ const fabiCharacter = new Character(
 const tobiCharacter = new Character(
 {
     name: 'Tobi',
-    dialogueImage: 'images/characters/tobi_cut.png',
+    dialogueImage: 'images/characters/tobi.jpeg',
     backgroundImage: 'images/characters/tobi_cut.png',
 });
 
 const giusiCharacter = new Character(
 {
     name: 'Giovanni',
-    dialogueImage: 'images/characters/giusi_cut.png',
+    dialogueImage: 'images/characters/giusi.jpeg',
     backgroundImage: 'images/characters/giusi_cut.png',
 });
 
@@ -59,7 +59,7 @@ const nicoCharacter = new Character(
 const paediCharacter = new Character(
 {
     name: 'Pädi',
-    dialogueImage: 'images/characters/paedi_cut.png',
+    dialogueImage: 'images/characters/pädi.jpeg',
     backgroundImage: 'images/characters/paedi_cut.png',
 });
 
