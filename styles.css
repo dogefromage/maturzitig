@@ -44,11 +44,11 @@ body
     right: 0;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 
-    padding: 5%;
+    padding: 2%;
 
     z-index: 100000;
 
@@ -57,7 +57,7 @@ body
 
 #loading-screen *
 {
-    margin: 2%;
+    margin: 1%;
 }
 
 #loading-screen img

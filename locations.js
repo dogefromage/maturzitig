@@ -217,6 +217,19 @@ locations.set('e-hinde',
     {
         interactions: 
         [
+            new Interaction({
+                character: sebCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 35, // in %
+                    x: 47,  // in %
+                    y: 40, // in %
+                },
+            })
         ],
         background: 'images/locations/e-hinde.jpeg',
         arrows:
@@ -233,75 +246,33 @@ locations.set('e-hinde',
     })
 );
 
-locations.set('stäge-wasserspender', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/stäge-wasserspender.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'abwart' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
 locations.set('glas-dach', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: samuCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 35, // in %
+                    x: 47,  // in %
+                    y: 35, // in %
+                },
+            })
+        ],
         background: 'images/locations/glas-dach.jpeg',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
             // [ ARROWS.TOP_CENTER, '' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('stäge-ph', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/stäge-ph.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('stei-monument', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/stei-monument.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
+            [ ARROWS.CENTER_LEFT, 'h-zentral' ],
+            [ ARROWS.CENTER_RIGHT, 'computerrum' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
@@ -346,7 +317,22 @@ locations.set('garte-1',
 locations.set('garte-2', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: dimiCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 40, // in %
+                    x: 40,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/garte-2.jpeg',
         arrows:
         [
@@ -399,7 +385,22 @@ locations.set('x-holz',
 locations.set('x-kopierer', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: nicoCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 50, // in %
+                    x: 50,  // in %
+                    y: 20, // in %
+                },
+            })
+        ],
         background: 'images/locations/x-kopierer.jpeg',
         arrows:
         [
@@ -418,7 +419,22 @@ locations.set('x-kopierer',
 locations.set('igang-west', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: paediCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 15, // in %
+                    x: 50,  // in %
+                    y: 50, // in %
+                },
+            })
+        ],
         background: 'images/locations/igang-west.jpeg',
         arrows:
         [
@@ -476,8 +492,8 @@ locations.set('mensa',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            [ ARROWS.TOP_RIGHT, 'u-büecher' ],
+            [ ARROWS.TOP_CENTER, 'u-büecher' ],
+            // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
@@ -487,30 +503,11 @@ locations.set('mensa',
     })
 );
 
-locations.set('schüelerruhm-igang', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/schüelerruhm-igang.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
 locations.set('hb', 
     new Location(
     {
         interactions: [],
-        background: 'images/locations/hb2.jpg',
+        background: 'images/locations/hb.jpg',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
@@ -518,7 +515,7 @@ locations.set('hb',
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
-            [ ARROWS.BOTTOM_LEFT, 'gleis-1' ],
+            // [ ARROWS.BOTTOM_LEFT, '' ],
             // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
@@ -528,7 +525,22 @@ locations.set('hb',
 locations.set('u-büecher', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: lariCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 40, // in %
+                    x: 50,  // in %
+                    y: 30, // in %
+                },
+            })
+        ],
         background: 'images/locations/u-büecher.jpeg',
         arrows:
         [
@@ -537,8 +549,8 @@ locations.set('u-büecher',
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             [ ARROWS.CENTER_RIGHT, 'u-stäge' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'mensa' ],
+            [ ARROWS.BOTTOM_LEFT, 'mensa' ],
+            // [ ARROWS.BOTTOM_CENTER, '' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
@@ -566,7 +578,10 @@ locations.set('u-stäge',
 locations.set('chraftruhm', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            
+        ],
         background: 'images/locations/chraftruhm.jpeg',
         arrows:
         [
@@ -581,25 +596,6 @@ locations.set('chraftruhm',
         ]
     })
 );
-
-// locations.set('e-wand',
-//     new Location(
-//     {
-//         interactions: [],
-//         background: 'images/locations/e-wand.jpeg',
-//         arrows:
-//         [
-//             [ ARROWS.TOP_LEFT, 'abwart' ],
-//             // [ ARROWS.TOP_CENTER, '' ],
-//             // [ ARROWS.TOP_RIGHT, '' ],
-//             [ ARROWS.CENTER_LEFT, 'h11' ],
-//             [ ARROWS.CENTER_RIGHT, 'liechthof' ],
-//             // [ ARROWS.BOTTOM_LEFT, '' ],
-//             [ ARROWS.BOTTOM_CENTER, 'u-büecher' ],
-//             // [ ARROWS.BOTTOM_RIGHT, '' ],
-//         ]
-//     })
-// );
 
 locations.set('stäge-igang', 
     new Location(
@@ -623,7 +619,22 @@ locations.set('stäge-igang',
 locations.set('liechthof', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: virgilCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 40, // in %
+                    x: 50,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/liechthof.jpeg',
         arrows:
         [
@@ -661,12 +672,27 @@ locations.set('sekretariat',
 locations.set('computerrum',
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: daveCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 40, // in %
+                    x: 20,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/computerrum.jpeg',
         arrows:
         [
             // [ ARROWS.TOP_LEFT, '' ],
-            [ ARROWS.TOP_CENTER, 'h-zentral' ],
+            [ ARROWS.TOP_CENTER, 'glas-dach' ],
             // [ ARROWS.TOP_RIGHT, '' ],
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
@@ -680,7 +706,10 @@ locations.set('computerrum',
 locations.set('h-zentral',
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+
+        ],
         background: 'images/locations/h-zentral.jpeg',
         arrows:
         [
@@ -690,7 +719,7 @@ locations.set('h-zentral',
             // [ ARROWS.CENTER_LEFT, '' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'computerrum' ],
+            [ ARROWS.BOTTOM_CENTER, 'glas-dach' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
@@ -706,67 +735,10 @@ locations.set('h11',
             // [ ARROWS.TOP_LEFT, '' ],
             // [ ARROWS.TOP_CENTER, '' ],
             // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
+            [ ARROWS.CENTER_LEFT, 'h-zentral' ],
             // [ ARROWS.CENTER_RIGHT, '' ],
             // [ ARROWS.BOTTOM_LEFT, '' ],
-            [ ARROWS.BOTTOM_CENTER, 'h-zentral' ],
-            [ ARROWS.BOTTOM_RIGHT, 'e-stäge' ],
-        ]
-    })
-);
-
-locations.set('glasgang',
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/glasgang.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('h-stäge', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/h-stäge.jpeg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
-            // [ ARROWS.BOTTOM_RIGHT, '' ],
-        ]
-    })
-);
-
-locations.set('gleis-1', 
-    new Location(
-    {
-        interactions: [],
-        background: 'images/locations/gleis-1.jpg',
-        arrows:
-        [
-            // [ ARROWS.TOP_LEFT, '' ],
-            // [ ARROWS.TOP_CENTER, '' ],
-            // [ ARROWS.TOP_RIGHT, '' ],
-            // [ ARROWS.CENTER_LEFT, '' ],
-            // [ ARROWS.CENTER_RIGHT, '' ],
-            // [ ARROWS.BOTTOM_LEFT, '' ],
-            // [ ARROWS.BOTTOM_CENTER, '' ],
+            [ ARROWS.BOTTOM_CENTER, 'e-stäge' ],
             // [ ARROWS.BOTTOM_RIGHT, '' ],
         ]
     })
