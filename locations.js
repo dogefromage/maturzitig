@@ -289,7 +289,7 @@ locations.set('garte-1',
                 character: giusiCharacter,
                 dialogue:
                 [
-                    new Sentence('...'),
+                    new Sentence('pfpfffpfpfpfpfffhhhh'),
                 ],
                 characterPlacement:
                 {
@@ -580,7 +580,19 @@ locations.set('chraftruhm',
     {
         interactions: 
         [
-            
+            new Interaction({
+                character: martinCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 70, // in %
+                    x: 35,  // in %
+                    y: 10, // in %
+                },
+            })
         ],
         background: 'images/locations/chraftruhm.jpeg',
         arrows:
@@ -600,7 +612,22 @@ locations.set('chraftruhm',
 locations.set('stäge-igang', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: angelaCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 25, // in %
+                    x: 20,  // in %
+                    y: 10, // in %
+                },
+            })
+        ],
         background: 'images/locations/stäge-igang.jpeg',
         arrows:
         [
@@ -728,7 +755,22 @@ locations.set('h-zentral',
 locations.set('h11', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: fribiCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 45, // in %
+                    x: 47,  // in %
+                    y: 30, // in %
+                },
+            })
+        ],
         background: 'images/locations/h11.jpeg',
         arrows:
         [

@@ -2,7 +2,7 @@
 
 const dammerCharacter = new Character(
 {
-    name: 'ULI',
+    name: 'Uli',
     dialogueImage: 'images/characters/uli.jpeg',
     backgroundImage: 'images/characters/dammer_postulate.png',
 });
@@ -30,7 +30,7 @@ const tobiCharacter = new Character(
 
 const giusiCharacter = new Character(
 {
-    name: 'Giovanni',
+    name: 'Giusi',
     dialogueImage: 'images/characters/giusi.jpeg',
     backgroundImage: 'images/characters/giusi_cut.png',
 });
@@ -97,4 +97,25 @@ const sebCharacter = new Character(
     dialogueImage: 'images/characters/seb_cut.png',
     backgroundImage: 'images/characters/seb_cut.png',
 });
+
+const fribiCharacter = new Character(
+{
+    name: 'Herr Friburghuus',
+    dialogueImage: 'images/characters/fribi.jpg',
+    backgroundImage: 'images/characters/fribi_cut.png',
+});
     
+const angelaCharacter = new Character(
+{
+    name: 'Angela',
+    dialogueImage: 'images/characters/angela_cut.png',
+    backgroundImage: 'images/characters/angela_cut.png',
+});
+
+const martinCharacter = new Character(
+{
+    name: 'Chinchin',
+    dialogueImage: 'images/characters/martin_cut.png',
+    backgroundImage: 'images/characters/martin_cut.png',
+});
+            
