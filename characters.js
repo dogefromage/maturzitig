@@ -118,4 +118,11 @@ const martinCharacter = new Character(
     dialogueImage: 'images/characters/martin_cut.png',
     backgroundImage: 'images/characters/martin_cut.png',
 });
-            
+
+const marcCharacter = new Character(
+{
+    name: 'Marc',
+    dialogueImage: 'images/characters/marc_cut.png',
+    backgroundImage: 'images/characters/marc_cut.png',
+});
+              

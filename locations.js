@@ -487,7 +487,22 @@ locations.set('mensa-usse',
 locations.set('mensa', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: marcCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 60, // in %
+                    x: 35,  // in %
+                    y: 40, // in %
+                },
+            })
+        ],
         background: 'images/locations/mensa.jpeg',
         arrows:
         [
