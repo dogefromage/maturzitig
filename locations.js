@@ -51,9 +51,9 @@ locations.set('roti-pfiler',
                 character: rolandCharacter,
                 characterPlacement:
                 {
-                    size: 30, // in %
+                    size: 35, // in %
                     x: 50,  // in %
-                    y: 50, // in %
+                    y: 45, // in %
                 },
                 dialogue: 
                 [
@@ -142,7 +142,22 @@ locations.set('igang-inne',
 locations.set('wasserspänder', 
     new Location(
     {
-        interactions: [],
+        interactions: 
+        [
+            new Interaction({
+                character: keyCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 20, // in %
+                    x: 55,  // in %
+                    y: 50, // in %
+                },
+            })
+        ],
         background: 'images/locations/wasserspänder.jpeg',
         arrows:
         [
@@ -780,9 +795,9 @@ locations.set('h11',
                 ],
                 characterPlacement:
                 {
-                    size: 45, // in %
+                    size: 55, // in %
                     x: 47,  // in %
-                    y: 30, // in %
+                    y: 20, // in %
                 },
             })
         ],

@@ -11,7 +11,7 @@ const rolandCharacter = new Character(
 {
     name: 'Roland',
     dialogueImage: 'images/characters/roland.jpeg',
-    backgroundImage: 'images/characters/roland_beach.png',
+    backgroundImage: 'images/characters/lötscher_cut.png',
 });
 
 const fabiCharacter = new Character(
@@ -38,21 +38,21 @@ const giusiCharacter = new Character(
 const joelCharacter = new Character(
 {
     name: 'Joe L. Schneider',
-    dialogueImage: 'images/characters/joel_cut.png',
+    dialogueImage: 'images/characters/joel.jpeg',
     backgroundImage: 'images/characters/joel_cut.png',
 });
 
 const dimiCharacter = new Character(
 {
     name: 'Dimi',
-    dialogueImage: 'images/characters/dimi_cut.png',
+    dialogueImage: 'images/characters/dimi.jpeg',
     backgroundImage: 'images/characters/dimi_cut.png',
 });
 
 const nicoCharacter = new Character(
 {
     name: 'Nico',
-    dialogueImage: 'images/characters/nico_cut.png',
+    dialogueImage: 'images/characters/nico.jpeg',
     backgroundImage: 'images/characters/nico_cut.png',
 });
 
@@ -66,21 +66,21 @@ const paediCharacter = new Character(
 const lariCharacter = new Character(
 {
     name: 'Lari',
-    dialogueImage: 'images/characters/lari_cut.png',
+    dialogueImage: 'images/characters/lari.jpeg',
     backgroundImage: 'images/characters/lari_cut.png',
 });
 
 const virgilCharacter = new Character(
 {
     name: 'Virgil',
-    dialogueImage: 'images/characters/virgil_cut.png',
+    dialogueImage: 'images/characters/virgil.jpeg',
     backgroundImage: 'images/characters/virgil_cut.png',
 });
 
 const daveCharacter = new Character(
 {
     name: 'Dave',
-    dialogueImage: 'images/characters/dave_cut.png',
+    dialogueImage: 'images/characters/dave.jpeg',
     backgroundImage: 'images/characters/dave_cut.png',
 });
 
@@ -94,7 +94,7 @@ const samuCharacter = new Character(
 const sebCharacter = new Character(
 {
     name: 'Seb',
-    dialogueImage: 'images/characters/seb_cut.png',
+    dialogueImage: 'images/characters/seb.jpeg',
     backgroundImage: 'images/characters/seb_cut.png',
 });
 
@@ -108,21 +108,27 @@ const fribiCharacter = new Character(
 const angelaCharacter = new Character(
 {
     name: 'Angela',
-    dialogueImage: 'images/characters/angela_cut.png',
+    dialogueImage: 'images/characters/angela.jpeg',
     backgroundImage: 'images/characters/angela_cut.png',
 });
 
 const martinCharacter = new Character(
 {
     name: 'Chinchin',
-    dialogueImage: 'images/characters/martin_cut.png',
+    dialogueImage: 'images/characters/martin.jpeg',
     backgroundImage: 'images/characters/martin_cut.png',
 });
 
 const marcCharacter = new Character(
 {
     name: 'Marc',
-    dialogueImage: 'images/characters/marc_cut.png',
+    dialogueImage: 'images/characters/marc.jpeg',
     backgroundImage: 'images/characters/marc_cut.png',
 });
               
+const keyCharacter = new Character(
+{
+    name: 'Key',
+    dialogueImage: 'images/characters/key.jpeg',
+    backgroundImage: 'images/characters/key.jpeg',
+});
