@@ -130,12 +130,12 @@ const keyCharacter = new Character(
 {
     name: 'Key',
     dialogueImage: 'images/characters/key.jpeg',
-    backgroundImage: 'images/characters/key.jpeg',
+    backgroundImage: 'images/characters/key_cut.png',
 });
 
 const elasCharacter = new Character(
 {
     name: 'Elas',
     dialogueImage: 'images/characters/elas.jpeg',
-    backgroundImage: 'images/characters/elas.jpeg',
+    backgroundImage: 'images/characters/elas_cut.png',
 });

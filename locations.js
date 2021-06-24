@@ -176,7 +176,21 @@ locations.set('wasserspänder',
 locations.set('zentrum', 
     new Location(
     {
-        interactions: [],
+            interactions: [
+             new Interaction({
+                character: elasCharacter,
+                dialogue:
+                [
+                    new Sentence('...'),
+                ],
+                characterPlacement:
+                {
+                    size: 20, // in %
+                    x: 55,  // in %
+                    y: 50, // in %
+                },
+            })
+        ],
         background: 'images/locations/zentrum.jpeg',
         arrows:
         [
