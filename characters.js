@@ -87,7 +87,7 @@ const daveCharacter = new Character(
 const samuCharacter = new Character(
 {
     name: 'Samu',
-    dialogueImage: 'images/characters/samu_cut.png',
+    dialogueImage: 'images/characters/samu.jpeg',
     backgroundImage: 'images/characters/samu_cut.png',
 });
 
@@ -131,4 +131,11 @@ const keyCharacter = new Character(
     name: 'Key',
     dialogueImage: 'images/characters/key.jpeg',
     backgroundImage: 'images/characters/key.jpeg',
+});
+
+const elasCharacter = new Character(
+{
+    name: 'Elas',
+    dialogueImage: 'images/characters/elas.jpeg',
+    backgroundImage: 'images/characters/elas.jpeg',
 });
