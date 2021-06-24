@@ -152,7 +152,7 @@ locations.set('wasserspänder',
                 ],
                 characterPlacement:
                 {
-                    size: 30, // in %
+                    size: 40, // in %
                     x: 55,  // in %
                     y: 50, // in %
                 },
@@ -185,7 +185,7 @@ locations.set('zentrum',
                 ],
                 characterPlacement:
                 {
-                    size: 30, // in %
+                    size: 40, // in %
                     x: 55,  // in %
                     y: 50, // in %
                 },
@@ -458,7 +458,7 @@ locations.set('igang-west',
                 ],
                 characterPlacement:
                 {
-                    size: 15, // in %
+                    size: 40, // in %
                     x: 50,  // in %
                     y: 50, // in %
                 },
