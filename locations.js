@@ -615,7 +615,6 @@ locations.set(
             new Sentence('Eini vo mine Lieblingsaktivitäte ishs mich au kreativ uszlebe und bi unglaublich talentiert im Zeichne und ufem Kopf schriebe. '),
             new Sentence('In dene Fächer, woni nid gern ufpass bini immer am doodle. '),
             new Sentence('Min Uftritt wird durchs Knackse vo mine Füess aakündigt. Ich weiss immrnoni wieso das passiert. Vlt sötti mol zum Arzt.  '),
-            new Sentence('(Usserdem hani als einzigi Person französisch lieber als englisch.) '),
             new Sentence('Ich bi immer parat für e lustigi Ziit. Öfters hani müesse dLüt us de 4A dazue überrede mol chli lockerer druf zsii.'),
         ],
         characterPlacement: {
@@ -653,9 +652,9 @@ locations.set(
             new Sentence('Merci pour votre attention, vous avez très bien travaillé!'),
         ],
         characterPlacement: {
-          size: 20, // in %
+          size: 40, // in %
           x: 10, // in %
-          y: 40, // in %
+          y: 25, // in %
         },
       }),
     ],

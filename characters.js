@@ -144,5 +144,5 @@ const molinariCharacter = new Character(
 {
     name: 'M. Molinari',
     dialogueImage: 'images/characters/molinari.jpeg',
-    backgroundImage: 'images/characters/molinari.jpeg',
+    backgroundImage: 'images/characters/molinari_cut.png',
 });
