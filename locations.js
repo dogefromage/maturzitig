@@ -561,7 +561,6 @@ locations.set(
             new Sentence('Au wenn i immerwieder usversehe gseit han, dass euse gliebte Düsterwald iiwacht oder ufschloft, bin i trotzdem akzeptiert worde. Das macht mi stolz.'),
             new Sentence('In minere Freizit bin i en sehr engagierte OL-Läufer, was au de Grund isch, wieso ich nie in Schuelsport han müsse. I han die Zit denn oft brucht zum lerne.'),
             new Sentence('Während de PRA Reis uf Berlin han ich mis erste Bier kah. Alli säge, dassi verdammt drunk gseh bii, aber ich bi de überzügig, dass das nid de Fall ish. '),
-            new Sentence('Aber wenn me die Bilder gseht, han ich selber mini Bedenke. '),
         ],
         characterPlacement: {
           size: 60, // in %
