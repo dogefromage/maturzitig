@@ -1,6 +1,30 @@
+@font-face {
+  src: url("fonts/comic.ttf");
+  font-family: "cmc";
+}
+
+@font-face {
+  src: url("fonts/comicbd.ttf");
+  font-family: "cmc";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/comici.ttf");
+  font-family: "cmc";
+  font-style: italic;
+}
+
+@font-face {
+  src: url("fonts/comicz.ttf");
+  font-family: "cmc";
+  font-weight: bold;
+  font-style: italic;
+}
+
 * {
   /* font-family: "brandon-grotesque",sans-serif; */
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "cmc";
   font-size: 22px;
 
   --arrow-scale: 1;
