@@ -9,7 +9,7 @@ const dammerCharacter = new Character(
 
 const rolandCharacter = new Character(
 {
-    name: 'Roland',
+    name: 'Herr Lötscher',
     dialogueImage: 'images/characters/roland.jpeg',
     backgroundImage: 'images/characters/lötscher_cut.png',
 });
@@ -138,4 +138,11 @@ const elasCharacter = new Character(
     name: 'Elas',
     dialogueImage: 'images/characters/elas.jpeg',
     backgroundImage: 'images/characters/elas_cut.png',
+});
+
+const molinariCharacter = new Character(
+{
+    name: 'M. Molinari',
+    dialogueImage: 'images/characters/molinari.jpeg',
+    backgroundImage: 'images/characters/molinari.jpeg',
 });

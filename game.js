@@ -23,8 +23,8 @@ fullscreenElement.addEventListener('click', () =>
 });
 
 // default location
-// let currentLocationKey = 'hb';
-let currentLocationKey = 'igang-süd';
+let currentLocationKey = 'hb';
+// let currentLocationKey = 'igang-süd';
 // location object
 let currentLocation;
 
@@ -102,7 +102,7 @@ function showLoadingScreen()
     setTimeout(() => 
     {
         loadingScreen.classList.add('hidden');
-    }, 4000)
+    }, 3000)
 }
 
 loadLocation();
