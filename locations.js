@@ -146,13 +146,13 @@ locations.set(
             new Sentence("Mängisch versteit mu mich numu halber aber das isch mier egal. Will im schlimmstu Fall chani öi güet ins Baseldyytsch wechslu oder mich verständigu en Español. "),
             new Sentence("Mis Markuzeichu sind mini lockigu, wallendu Haari. In minera Friizit beschäftigu ich mich mit Anime und Star Trek lüegu. "),
             new Sentence("Wenns um Computer oder rechtlichi Fraage geit, chan mu mich immer z'Rat zieh und ich gibu öi gäru Üskunft. "),
-            new Sentence("In däm Sinn, hebet nu en schöne Abund, ich gang wieder embrüf ins scheena Wallis ga Schiifahru."),
             new Sentence("Mis Lebensziel ishs es Mondhotel zbaue. Ich bi scho drah die Päss und Outfits am designe. "),
             new Sentence("Scho sit sehr früeh ish es min Traum gseh Astronaut zwerde um dere Welt zentchoo. "),
             new Sentence("Während em lerne tue ich sehr luut Techno lose. Lerne machi abr seltener, willis eig garnid nötig han. "),
             new Sentence("Ich tue au gern mini Ufgobe uf de letzti Drücker erledige. Will aber mini Technik mir immrno sehr gueti Note bringt, wird ich sie so schnell nid ändere."),
             new Sentence("Usserdem wärde villi vo mini Lehrer am Arsch si wenn ich nümme do bi. Isch irgendöpps mit em Beamer nid gange oder heds irgend es anders technischs Problem geh bi ich immer sofort zur Stell gsi. "),
             new Sentence("So han ich au einige vo mine Mitschüeler*inne ihre Vortrag gretted."),
+            new Sentence("In däm Sinn, hebet nu en schöne Abund, ich gang wieder embrüf ins scheena Wallis ga Schiifahru."),
         ],
         characterPlacement: {
           size: 40, // in %
@@ -337,7 +337,7 @@ locations.set(
             new Sentence('Dank minerer Grössi, werd ich wohl nie erwachse und kah mich somit immer ufd Schuel freue und ufs Kinderkrankehuus. '),
             new Sentence('Ah und by the way: Pizza schnidet me mit de Schär, das isch e alti italiänischi Tradition. Alli wo eppis anders behaupte hend kei Ahnig!'),
             new Sentence('E anderi Mahlziit, wo ich lieb sind Hamburgers Ketchup mit Pommes (Nei es isch nid umgekehrt gschriebe). '),
-            new Sentence('Als kliises Kind (also kliner als jetzt) han ich unbedingt im McDonalds lebe, will ich Burger so unsterblich lieb.'),
+            new Sentence('Als kliises Kind (also kliner als jetzt) han ich unbedingt im McDonalds lebe wölle, will ich Burger so unsterblich lieb.'),
         ],
         characterPlacement: {
           size: 40, // in %
@@ -445,7 +445,7 @@ locations.set(
             new Sentence('Ich verbring gern sterneklari Nächt bim fotografiere vo Planete vo mim Balkon us. De befindet sich übrigens grad hinter der Schuel. '),
             new Sentence('In Sache Technik bin ich immer uf em neuste Stand. In minere Freizit spiel ich Klavier und es git nid viel Stück woni nid ind Taste chan zaubere. '),
             new Sentence('Nebebii spiel ich no Tennis und nütz de Rest vo minere Ziit zum Anime-Figure zeichne und Rocket League zspiele. Japanisch hani mr übrigens au no selber biibrocht '),
-            new Sentence('Du frogsch dich jetzt sicher, wie ich das alles in min Tag inebechum und gliichzitig au no gnueg schloof. D‘Antwort isch relativ eifach: Schloof isch überbewerte '),
+            new Sentence('Du frogsch dich jetzt sicher, wie ich das alles in min Tag inebechum und gliichzitig au no gnueg schloof. D‘Antwort isch relativ eifach: Schloof isch überbewertet. '),
         ],
         characterPlacement: {
           size: 50, // in %
