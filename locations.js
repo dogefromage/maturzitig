@@ -20,7 +20,7 @@ locations.set(
             new Sentence('*tiefes Einatmen*'),
             new Sentence('Ich habe mehrere Kinder und in meiner Freizeit fahre ich gerne Inlineskates. Wenn ich den lieben Herr Joe.L. Schneider in der Nähe meines Hauses entdecke, fühle ich mich gerade von ihm gestalkt. '),
             new Sentence('*tiefes Einatmen* '),
-            new Sentence('Wie man merkt, bin ich ein Deutscher, deswegen spreche ich mit dir auch nur Hochdeutsch. Ich bin aus Köln und höre vielleicht auch deswegen leidenschaftlich gerne Kölschrock. Und habe die Klasse auf hits wie Verdamp lang her aufmerksam gemacht, der immerno h an keiner Klassenparty fehlen darf '),
+            new Sentence('Wie man merkt, bin ich ein Deutscher, deswegen spreche ich mit dir auch nur Hochdeutsch. Ich bin aus Köln und höre vielleicht auch deswegen leidenschaftlich gerne Kölschrock. Und habe die Klasse auf Hits wie Verdamp lang her aufmerksam gemacht, der immernoch an keiner Klassenparty fehlen darf '),
             new Sentence('*tiefes Einatmen*'),
             new Sentence('Wenn bei einem Physikexperiment einmal etwas sehr falsches herauskommt, dann gibt es genau zwei Möglichkeiten für weiteres Vorgehen. '),
             new Sentence('Entweder mir ist wieder einmal ein Fehler unterlaufen…. Oder ich schreibe einfach "naja" oder "uff" an die Wandtafel und rechne mit der nächsten Aufgabe weiter.'),
