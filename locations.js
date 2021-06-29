@@ -26,7 +26,6 @@ locations.set(
             new Sentence('Und ich warne dich, mit elektrischer Spannung spielt man nicht. Das durfte ich leider an meinem eigenen Leibe erfahren, als ich der 4A mit voller überzeugung den Van de Graaff Generator demonstrierte.'),
             new Sentence('Ich bin sehr stolz auf meine Physikprüfungen. Ich kopiere jedoch teilweise Aufgaben von alten Tests und frage mich dann, ob die Schüler eine Facebook-Gruppe führen, in der Tests verteilt werden. '),
             new Sentence('Apropos Test, Wehe ihr habt in euren Antworten im Physiktest Rechtschreibfehler, dann kann es schnell mal sein, dass ich euch einfach so aus dem Nichts heraus einige Punkte abziehe. '),
-            new Sentence('Ich selbst bin jedoch teilweise nicht so gut in der Deutschen Sprache, was dazu führt, dass ich auch selbst immer wieder Rechtschreibfehler auf meinen Tests habe und somit auch mal den ein oder anderen übersehe.'),
         ],
       }),
     ],
