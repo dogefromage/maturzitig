@@ -15,7 +15,7 @@ locations.set(
             new Sentence('Guten Tag *tiefes Einatmen* '),
             new Sentence('Mein Name ist Dr. Ulrich Dammer. Einige von euch kennen mich vielleicht auch unter meinem sehr kreativen Schach-Namen. Quellenuli. '),
             new Sentence('Einige fragen sich, wie ich auf einen so kreativen Namen gekommen bin. Naja, ich wohne am Quellenweg und heisse Uli.'),
-            new Semtence('Einige Schachspieler der Klasse 4A haben mein Talent für Schach am eingenen Leibe erfahren, als ich gegen sie in der Schachnacht gespielt habe'),
+            new Sentence('Einige Schachspieler der Klasse 4A haben mein Talent für Schach am eingenen Leibe erfahren, als ich gegen sie in der Schachnacht gespielt habe'),
             new Sentence('Aber mit meiner Faszination fürs Schachspiel habe ich wohl die ganze Klasse 4A angesteckt, denn im letzten Jahr gab es fast keine Pause, in der keine Partie gespielt wurde.'),
             new Sentence('In diese Partien war ich auch manchmal verwickelt und habe meistens meine Schachexpertise beweisen können. Sogar gegen Sebastians Schachcomputer habe ich gewonnen.'),
             new Sentence('Aber sind wir einmal ehrlich, lieber die Faszination für Schach wird im Unterricht ausgelebet, als dass sie wieder an ihren Zauberwürfeln herumdrehen.'),
@@ -30,6 +30,8 @@ locations.set(
             new Sentence('Aber die vielen Experimente und der anschauliche Unterrichtsstil haben dazu geführt, dass die ganze Klasse in meinen Lektionen immer gut unterhalten war.'),
             new Sentence('Ich bin sehr stolz auf meine Physikprüfungen. Ich kopiere jedoch teilweise Aufgaben von alten Tests und frage mich dann, ob die Schüler eine Facebook-Gruppe führen, in der Tests verteilt werden. '),
             new Sentence('Die Klasse 4A wird mich sicher sehr stark vermissen, davon bin ich überzeugt! Ich sie wahrscheinlich auch etwas ;) '),
+            new Sentence('Ich hatte grundsätzlich viel Freude daran, die Klasse 4A zu unterrichten. Ich denke dank meiner positiven, freundlichen und hilfsbereiten Art hat die 4A auch Freude an meinem Unterricht und an meiner Person. Ausserdem habe ich meine Lektionen auch regelmässig mit coolen Videos, die zu Teil topaktuel und zum Teil schon fast antik waren, und mit einer grossen Variation an Experimenten aufgefrischt.'),
+
         ],
       }),
     ],
